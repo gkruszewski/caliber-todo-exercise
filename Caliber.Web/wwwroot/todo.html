@@ -1,0 +1,23 @@
+﻿<h2>My Todo List</h2>
+<div>
+    <md-input-container>
+        <input md-input placeholder="What needs to be done?" [(ngModel)]="todo.description" name="description" #description="ngModel">
+    </md-input-container>
+    <button md-raised-button (click)="onAddClick()" color="primary" [disabled]="isBusy">Add</button>
+</div>
+<div>
+    <md-progress-bar *ngIf="isBusy" mode="indeterminate" color="accent"></md-progress-bar>
+    <h3 class="red" *ngIf="errorMessage !== null">{{errorMessage}}</h3>
+</div>
+<md-list *ngFor="let todo of todos; let index = index">
+    <md-list-item>
+        <span *ngIf="!todo.isEditing">{{todo.description}}</span>
+        <md-input-container *ngIf="todo.isEditing">
+            <input md-input [(ngModel)]="todo.description" name="description" #description="ngModel">
+        </md-input-container>
+        <button *ngIf="!todo.isEditing" md-raised-button (click)="onEditClick(todo)" color="primary" [disabled]="isBusy">Edit</button>
+        <button *ngIf="!todo.isEditing" md-raised-button (click)="onDeleteClick(todo,index)" color="primary" [disabled]="isBusy">Delete</button>
+        <button *ngIf="todo.isEditing" md-raised-button (click)="onUpdateClick(todo)" color="primary" [disabled]="isBusy">Update</button>
+        <button *ngIf="todo.isEditing" md-raised-button (click)="onCancelClick(todo,index)" color="primary" [disabled]="isBusy">Cancel</button>
+    </md-list-item>
+</md-list>

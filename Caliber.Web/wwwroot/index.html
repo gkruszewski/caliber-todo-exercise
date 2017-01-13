@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css -->
+    <link rel="stylesheet" href="node_modules/@angular/material/core/theming/prebuilt/indigo-pink.css">
+    <!--endbuild-->
+</head>
+<body>
+    <app>Loading...</app>
+    <!-- build:js -->
+    <script src="node_modules/core-js/client/shim.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/hammerjs/hammer.js"></script>
+    <script src="js/system.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+    <!-- endbuild -->
+</body>
+</html>
