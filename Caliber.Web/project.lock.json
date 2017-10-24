@@ -3,8 +3,20 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
-      "Autofac/4.2.1": {
+      "Autofac/4.6.2": {
         "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Drawing",
+          "System.IO.Compression.FileSystem",
+          "System.Numerics",
+          "System.Runtime.Serialization",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
         "compile": {
           "lib/net45/Autofac.dll": {}
         },
@@ -2060,12 +2072,12 @@
     }
   },
   "libraries": {
-    "Autofac/4.2.1": {
-      "sha512": "mLXJziTZPIt7R6m8SmPIOjMTd4k8Ok9L21j4yFniyA8AogHxEL2XburSwElJLmGU5KsgeMkpuTI22S3GSOeLqQ==",
+    "Autofac/4.6.2": {
+      "sha512": "wKI7F6+n45gqfq0T8FuB3hFzaCkuegiFo5in6uB1y2Ai9ZYcjue8yqk3yzyNEwBDS7AyvlTUGSoNovwpUuKqTw==",
       "type": "package",
-      "path": "Autofac/4.2.1",
+      "path": "Autofac/4.6.2",
       "files": [
-        "Autofac.4.2.1.nupkg.sha512",
+        "Autofac.4.6.2.nupkg.sha512",
         "Autofac.nuspec",
         "lib/net45/Autofac.dll",
         "lib/net45/Autofac.xml",
@@ -6453,7 +6465,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Autofac >= 4.2.1",
+      "Autofac >= 4.6.2",
       "Autofac.Extensions.DependencyInjection >= 4.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.1",
       "Microsoft.AspNetCore.Routing >= 1.0.1",

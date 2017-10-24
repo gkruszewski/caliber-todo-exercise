@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "Autofac": "4.2.1",
+        "Autofac": "4.6.2",
         "Autofac.Extensions.DependencyInjection": "4.0.0",
         "Microsoft.AspNetCore.Mvc": "1.0.1",
         "Microsoft.AspNetCore.Routing": "1.0.1",
